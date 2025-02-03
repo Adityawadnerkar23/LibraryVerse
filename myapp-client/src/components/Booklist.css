@@ -1,0 +1,139 @@
+/* Booklist.css */
+.table-container {
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.card {
+  border: none;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-header {
+  background: #343a40;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-body .card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-footer {
+  text-align: center;
+  padding: 15px;
+  background: #f1f1f1;
+}
+
+.btn {
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: none;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-danger:hover {
+  background: #c0392b;
+}
+
+.btn-warning {
+  background: #f39c12;
+  color: white;
+}
+
+.btn-warning:hover {
+  background: #e67e22;
+}
+
+.btn-success {
+  background: #2ecc71;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #27ae60;
+}
+
+.btn-secondary {
+  background: #95a5a6;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #7f8c8d;
+}
+
+/* Modal styles */
+.modal-body img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-header {
+  background: #007bff;
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal-footer {
+  border-radius: 0 0 10px 10px;
+}
+
+.modal-footer .btn {
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.modal-footer .btn:hover {
+  background: #0056b3;
+}
+
+.table th, .table td {
+  text-align: center;
+  padding: 15px;
+}
+
+.table thead {
+  background-color: #343a40;
+  color: white;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f1f1f1;
+}

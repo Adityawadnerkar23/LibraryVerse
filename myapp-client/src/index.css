@@ -1,0 +1,157 @@
+.sm{
+  background-color:cornsilk;
+}
+.navbar-expand-sm .navbar-nav {
+  align-items: center;
+}
+button.login.btn.btn-primary {
+  background: linear-gradient(90deg, #150202 0%, #050500 99.79%);
+  width: 70px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  border: none;
+  font-weight: 200;
+  border-radius: 100px;
+  text-align: center;
+}
+.logo{
+  width: 30px;
+}
+h3 {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.form-control{
+  text-align: center;
+  background-color:rgb(54, 238, 245);
+  padding: .375rem 2.75rem;
+
+}
+.login_form img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.login_form1 {
+  background: rgb(70, 248, 215);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+  margin-right: 20px;
+  border-radius: 10px;
+  padding: 20px 35px 40px;
+  box-shadow: 0px 0px 4px 2px #8187AC40;
+}
+
+.login_form1 h2 {
+  color: rgb(54, 238, 245);
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: inherit;
+  margin-bottom: 20px;
+  padding: 5px 0;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+.mainContainer {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+}
+
+.resultContainer,
+.historyItem {
+  flex-direction: row;
+  display: flex;
+  width: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.historyContainer {
+  flex-direction: column;
+  display: flex;
+  height: 200px;
+  align-items: center;
+  flex-grow: 5;
+  justify-content: flex-start;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 260px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.inputContainer > .errorLabel {
+  color: rgb(173, 219, 34);
+  font-size: 12px;
+}
+
+.inputBox {
+  height: 48px;
+  width: 400px;
+  font-size: large;
+  border-radius: 8px;
+  border: 1px solid grey;
+  padding-left: 8px;
+}
+.overflow-auto {
+    overflow: auto !important;
+    display: grid;
+    text-align-last: center;
+    text-transform: uppercase;
+}
+table, th, td {
+  padding: 15px;
+  text-align: left;}
+tr:hover {background-color: coral;}
+.btn {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.btn:hover {background-color: #3e8e41}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+}
+
+

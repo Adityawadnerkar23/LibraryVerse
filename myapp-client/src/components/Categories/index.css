@@ -1,0 +1,83 @@
+/* General styles for the categories section */
+.our-categoriess {
+  margin-top: 90px;
+}
+
+.our-categoriess .slick-slide {
+  padding: 0px 30px 0px 0px;
+  color: #070606;
+}
+
+img.book-icon {
+  margin-left: auto;
+  display: block;
+  margin-right: auto;
+  width: 150px;
+}
+
+h3.servicetext {
+  position: relative;
+  color: #070606; /* Changed color to white */
+  font-family: 'Microsoft Sans Serif', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  top: -50px;
+  letter-spacing: 0.4px;
+}
+
+
+h3.cat-title {
+  color: #0d1114;
+  font-family: 'Microsoft Sans Serif', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+/* Style adjustments for the mobile view */
+@media only screen and (max-width: 600px) {
+  h3.servicetext {
+    font-size: 16px;
+    top: -40px; /* Adjusted position */
+  }
+
+  .our-categoriess .slick-slide {
+    padding: 5px !important;
+  }
+
+  .our-categoriess.moile-cateort {
+    margin-top: 120px; /* Fixed typo from 'moile-cateort' to 'mobile-categories' */
+  }
+
+  img.book-icon {
+    width: 35px; /* Adjusted for smaller screens */
+  }
+
+  h3.cat-title {
+    font-size: 22px; /* Smaller font size for better mobile viewing */
+  }
+}
+
+/* Adjustments for larger screens (tablets, desktop, etc.) */
+@media only screen and (min-width: 601px) {
+  .slick-slide {
+    padding: 0px 20px; /* Reducing padding for better layout on larger screens */
+  }
+
+  h3.servicetext {
+    font-size: 22px; /* Slightly smaller size for larger screens */
+    top: -40px;
+  }
+}
+
+
+ul.slick-dots {
+  margin-bottom: 20px;
+  position: initial;
+  color: #070606;
+}
+
+/* Styling for overlay */

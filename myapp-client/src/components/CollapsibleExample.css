@@ -1,0 +1,77 @@
+/* CollapsibleExample.css */
+.leftlogo {
+    cursor: pointer;
+  }
+  
+  .sm {
+    background-color: #343a40;
+    padding: 10px 20px;
+  }
+  
+  .navbar-brand {
+    color: white;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white !important;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #f8f9fa !important;
+    transition: color 0.3s ease;
+  }
+  
+  .language-select {
+    background-color: #343a40;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  .language-select option {
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .logout {
+    background-color: #dc3545;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 8px 15px;
+    border: none;
+  }
+  
+  .logout:hover {
+    background-color: #c82333;
+  }
+  
+  .logout .logo {
+    margin-right: 10px;
+  }
+  
+  .fa {
+    margin-right: 5px;
+  }
+  
+  /* Media Queries for Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      text-align: center;
+    }
+  
+    .language-select {
+      margin-left: 10px;
+    }
+  
+    .logout {
+      margin-left: 10px;
+    }
+  }
+  

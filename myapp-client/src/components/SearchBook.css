@@ -1,0 +1,77 @@
+/* SearchBook.css */
+.search-book {
+  width: 100%;
+  max-width: 600px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.search-book input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-book input:focus {
+  border-color: #007bff;
+}
+
+.search-book button {
+  width: 40%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-book button:hover {
+  background: #0056b3;
+}
+
+.search-alert {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-alert ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.search-alert ul li {
+  padding: 8px;
+  font-size: 16px;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.search-alert ul li:hover {
+  background: #007bff;
+  color: white;
+}
+
+.search-alert p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+  font-style: italic;
+}

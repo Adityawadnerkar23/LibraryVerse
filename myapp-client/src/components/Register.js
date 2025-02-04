@@ -1,57 +1,33 @@
 import React, { useState } from "react";
-import { Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import swal from "sweetalert";
-import logo from "./assests/work-progress_5578703.png";
-import { Link } from "react-router-dom";
-// import pana from "../assests/pana.png";
-
+import logo from "./assests/user_166246.png";
 
 const Register = () => {
   const [showPassword, setShowPassword] = useState(false);
-  const togglePasswordVisibility = () => {
-    setShowPassword((prevState) => !prevState);
-  };
+  const [formData, setFormData] = useState({
+    firstName: "",
+    middleName: "",
+    lastName: "",
+    gender: "",
+    email: "",
+    password: "",
+    phone: "",
+    dob: "",
+    address: "",
+  });
 
-  const [firstName, setFirstName] = useState('');
-  const [middleName, setMiddleName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [gender, setGender] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [phone, setPhone] = useState('');
-  const [dob, setDob] = useState('');
-  const [address, setAddress] = useState('');
+  const togglePasswordVisibility = () => setShowPassword((prev) => !prev);
+  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const registerUser = async (e) => {
     e.preventDefault();
     try {
-      const data = {
-        firstName: firstName,
-        middleName: middleName,
-        lastName: lastName,
-        gender: gender,
-        email: email,
-        password: password,
-        phone: phone,
-        dob: dob,
-        address: address,
-      };
-
-      const response = await axios.post('http://localhost:5000/api/post_register', data);
-
+      const response = await axios.post("http://localhost:5000/api/post_register", formData);
       if (response.status === 201) {
         swal("Success", "User registered successfully!", "success");
-        
-        setFirstName('');
-        setMiddleName('');
-        setLastName('');
-        setGender('');
-        setEmail('');
-        setPassword('');
-        setPhone('');
-        setDob('');
-        setAddress('');
+        setFormData({ firstName: "", middleName: "", lastName: "", gender: "", email: "", password: "", phone: "", dob: "", address: "" });
       } else {
         swal("Error", "User registration failed", "error");
       }
@@ -60,200 +36,144 @@ const Register = () => {
       console.error("Error registering user:", error);
     }
   };
-  
+
   return (
-    <div>
-    <div className="login" style={{ background: "#F7EAED" }}>
-    <div className="row" style={{ alignItems: "center" }}>
-    {/* <div className="col-lg-6" style={{ paddingRight: 0, paddingLeft: 0 }}>
-    <img src={pana} style={{ width: "100%", padding: "100px" }} alt="pana" />
-    </div> */}
-    <div className="col-lg-6" style={{ paddingRight: 40, paddingLeft: 20 }}>
-    <div className="login_form">
-    <div className="login_form1">
-    <img src={logo} alt="logo" />
-    <h2>Create your account</h2>
-    <form onSubmit={registerUser}>
-    <div className="scrollregister">
-    <div className="col-lg-12" style={{ display: "block", margin: "auto" }}>
-    <div className="mb-4 input-group">
-    <span className="input-group-text" id="basic-addon1">
-    <i className="fa fa-user" aria-hidden="true" />
-    </span>
-    <input
-    required=""
-    name="First Name"
-    placeholder="First Name"
-    aria-label="First Name"
-    type="text"
-    className="form-control"
-    value={firstName}
-    onChange={(e) => setFirstName(e.target.value)}
-    />
-    </div>
-    </div>
-    <Row>
-                      <div className="col-lg-6" style={{ display: "block", margin: "auto" }}>
-                        <div className="mb-4 input-group">
-                          <span className="input-group-text" id="basic-addon1">
-                            <i className="fa fa-user" aria-hidden="true" />
-                          </span>
-                          <input
-                            required=""
-                            name="Middle Name"
-                            placeholder="Middle Name"
-                            aria-label="Middle Name"
-                            type="text"
-                            className="form-control"
-                            value={middleName}
-                            onChange={(e) => setMiddleName(e.target.value)}
-                          />
-                        </div>
-                      </div>
-                      <div className="col-lg-6" style={{ display: "block", margin: "auto" }}>
-                        <div className="mb-4 input-group">
-                          <span className="input-group-text" id="basic-addon1">
-                            <i className="fa fa-user" aria-hidden="true" />
-                          </span>
-                          <input
-                            required=""
-                            name="Last Name"
-                            placeholder="Last Name"
-                            aria-label="Email ID"
-                            type="text"
-                            className="form-control"
-                            value={lastName}
-                            onChange={(e) => setLastName(e.target.value)}
-                          />
-                        </div>
-                      </div>
-                    </Row>
-                    <div className="col-lg-12" style={{ display: "block", margin: "auto" }}>
-                      <div className="mb-4 input-group">
-                        <span className="input-group-text" id="basic-addon1">
-                          <i className="fa fa-user" aria-hidden="true" />
-                        </span>
-                        <select
-                          className="form-control"
-                          aria-label="Default select example"
-                          value={gender}
-                          onChange={(e) => setGender(e.target.value)}
-                        >
-                          <option value="">Select Gender</option>
-                          <option value="Male">Male</option>
-                          <option value="Female">Female</option>
-                          <option value="Others">Others</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div className="col-lg-12" style={{ display: "block", margin: "auto" }}>
-                      <div className="mb-4 input-group">
-                        <span className="input-group-text" id="basic-addon1">
-                          <i className="fa fa-envelope-o" aria-hidden="true" />
-                        </span>
-                        <input
-                          required=""
-                          name="email"
-                          placeholder="Email Id"
-                          aria-label="Email ID"
-                          type="text"
-                          className="form-control"
-                          value={email}
-                          onChange={(e) => setEmail(e.target.value)}
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-12" style={{ display: "block", margin: "auto" }}>
-                      <div className="mb-4 input-group">
-                        <span className="input-group-text" id="basic-addon1">
-                          <i className="fa fa-lock" aria-hidden="true" />
-                        </span>
-                        <input
-                          required=""
-                          name="password"
-                          placeholder="Enter Password"
-                          aria-label="Enter Password"
-                          type={showPassword ? "text" : "password"}
-                          className="form-control"
-                          value={password}
-                          onChange={(e) => setPassword(e.target.value)}
-                        />
-                        <span
-                          className="input-group-text"
-                          id="basic-addon1"
-                          style={{ cursor: "pointer" }}
-                          onClick={togglePasswordVisibility}
-                        >
-                          <i className={showPassword ? "fa fa-eye" : "fa fa-eye-slash"} aria-hidden="true" />
-                        </span>
-                      </div>
-                    </div>
-                    <div className="col-lg-12" style={{ display: "block", margin: "auto" }}>
-                      <div className="mb-4 input-group">
-                        <span className="input-group-text" id="basic-addon1">
-                          <i className="fa fa-phone" aria-hidden="true" />
-                        </span>
-                        <input
-                          required=""
-                          name="Phone Number"
-                          placeholder="Phone Number"
-                          aria-label="Phone Number"
-                          type="text"
-                          className="form-control"
-                          value={phone}
-                          onChange={(e) => setPhone(e.target.value)}
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-12" style={{ display: "block", margin: "auto" }}>
-                      <div className="mb-4 input-group">
-                        <span className="input-group-text" id="basic-addon1">
-                          <i className="fa fa-calendar" aria-hidden="true" />
-                        </span>
-                        <input
-                          required=""
-                          name="Date Of Birth"
-                          placeholder="Date Of Birth"
-                          aria-label="Date Of Birth"
-                          type="date"
-                          className="form-control"
-                          value={dob}
-                          onChange={(e) => setDob(e.target.value)}
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-12" style={{ display: "block", margin: "auto" }}>
-                      <div className="mb-4 input-group">
-                        <span className="input-group-text" id="basic-addon1">
-                          <i className="fa fa-map-marker" aria-hidden="true" />
-                        </span>
-                        <input
-                          required=""
-                          name="Address"
-                          placeholder="Enter Address"
-                          aria-label="Eddress"
-                          type="text"
-                          className="form-control"
-                          value={address}
-                          onChange={(e) => setAddress(e.target.value)}
-                        />
-                      </div>
-                    </div>
-                    <div className="col-lg-1 mt-3" style={{ display: "block", margin: "auto" }}>
-                      <button type="submit" className="login_btnup">
-                        Register
-                      </button>
-                    </div>
-                  </div>
-                </form>
-                <span className="login_forgot">
-                  Already have an account? <Link to='/'>Login</Link>
-                </span>
-              </div>
-            </div>
-          </div>
+    <div className="container">
+      <div className="form-container">
+        <div className="logo-container">
+          <img src={logo} alt="logo" className="logo" />
+          <h2>Create Your Account</h2>
         </div>
+        <form onSubmit={registerUser}>
+          <div className="form-group">
+            <input type="text" name="firstName" placeholder="First Name" value={formData.firstName} onChange={handleChange} required />
+            <input type="text" name="middleName" placeholder="Middle Name" value={formData.middleName} onChange={handleChange} />
+          </div>
+          <input type="text" name="lastName" placeholder="Last Name" value={formData.lastName} onChange={handleChange} required />
+          <select name="gender" value={formData.gender} onChange={handleChange} required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+          </select>
+          <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} required />
+          <div className="password-container">
+            <input type={showPassword ? "text" : "password"} name="password" placeholder="Password" value={formData.password} onChange={handleChange} required />
+            <button type="button" onClick={togglePasswordVisibility} className="toggle-password">
+              {showPassword ? "🙈" : "👁"}
+            </button>
+          </div>
+          <input type="tel" name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} required />
+          <input type="date" name="dob" value={formData.dob} onChange={handleChange} required />
+          <input type="text" name="address" placeholder="Address" value={formData.address} onChange={handleChange} required />
+          <button type="submit" className="register-button">Register</button>
+        </form>
+        <p className="login-link">Already have an account? <Link to="/">Login</Link></p>
       </div>
+
+      {/* Inline Styles */}
+      <style>{`
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: #f4f4f9;
+        }
+
+        .form-container {
+          background-color: #ffffff;
+          padding: 40px;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          width: 100%;
+          max-width: 400px;
+          text-align: center;
+        }
+
+        .logo-container {
+          margin-bottom: 20px;
+        }
+
+        .logo {
+          width: 50px;
+          height: 50px;
+          object-fit: contain;
+          margin-bottom: 10px;
+        }
+
+        h2 {
+          font-size: 24px;
+          color: #333;
+        }
+
+        .form-group {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 10px;
+        }
+
+        input, select {
+          width: 100%;
+          padding: 12px;
+          margin: 8px 0;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          font-size: 16px;
+        }
+
+        select {
+          width: 100%;
+          padding: 12px;
+        }
+
+        .password-container {
+          position: relative;
+        }
+
+        .toggle-password {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          background: none;
+          border: none;
+          font-size: 18px;
+          cursor: pointer;
+        }
+
+        button.register-button {
+          width: 100%;
+          padding: 12px;
+          background-color: #4CAF50;
+          color: white;
+          font-size: 16px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          margin-top: 20px;
+        }
+
+        button.register-button:hover {
+          background-color: #45a049;
+        }
+
+        .login-link {
+          margin-top: 20px;
+          font-size: 14px;
+          color: #555;
+        }
+
+        .login-link a {
+          color: #4CAF50;
+          text-decoration: none;
+        }
+
+        .login-link a:hover {
+          text-decoration: underline;
+        }
+      `}</style>
     </div>
   );
 };

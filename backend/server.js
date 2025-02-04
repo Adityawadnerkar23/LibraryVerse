@@ -9,7 +9,11 @@ const SearchList = require('./routes/books');
 require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 5000;
-app.use(cors());
+app.use(cors({
+    origin: 'https://library-verse.vercel.app/',
+    methods:['GET','PUT','POST','DELETE'],
+    credentials:true
+}));
 app.use(bodyParser.json());
 app.use('/api', addressRoutes);
 app.use('/api',register)

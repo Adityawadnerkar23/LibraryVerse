@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import loginimage from './assests/user_166246.png';
 import swal from 'sweetalert';
 import { Link } from "react-router-dom";
-import "../Login.css"
 
 const Login = () => {
   const navigate = useNavigate();

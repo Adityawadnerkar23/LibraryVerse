@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import loginimage from './assests/user_166246.png';
+import loginimage from './assests/Leftlogo.webp';
 import swal from 'sweetalert';
 import { Link } from "react-router-dom";
 

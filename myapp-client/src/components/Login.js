@@ -41,7 +41,7 @@ const Login = () => {
         }),
       };
 
-      const response = await fetch('http://localhost:5000/api/post_log', reqOptions);
+           const response = await fetch('https://library-verse.vercel.app/api/post_log', reqOptions);
       const data = await response.json();
       console.log(data, "on Data")
       if (data.status == 200) {

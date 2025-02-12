@@ -16,7 +16,8 @@
 ✅ Dark Mode & Responsive UI – Optimized for all screen sizes.
 <br/>
 # 📂 Tech Stack
-<h2>Frontend:<h2/>
+<p>
+  <h2>Frontend:<h2/>
   <p>
     ⚛️ React.js (Context API, Hooks)
 <br/>
@@ -39,3 +40,5 @@ Deployment:
 🌎 Frontend: Deployed on Vercel
 <br/>
 🖥️ Backend: Hosted on Vercel/Render
+
+</p>

@@ -24,9 +24,7 @@
 <br/>
 🌐 React Router for Navigation
 <br/>
-  </p>
 <h2>Backend:</h2>
-<p>
   🛠️ Node.js & Express.js
 <br/>
 📦 MongoDB (Mongoose ORM)

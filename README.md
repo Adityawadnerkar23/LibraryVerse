@@ -22,14 +22,13 @@
 <br/>
 🎨 Bootstrap for UI Styling
 <br/>
-🌐 React Router for Navigation
-<br/>
+   🌐 React Router for Navigation
 <h2>Backend:</h2>
   🛠️ Node.js & Express.js
 <br/>
-📦 MongoDB (Mongoose ORM)
+ 📦 MongoDB (Mongoose ORM)
 <br/>
-🔑 JWT Authentication
+ 🔑 JWT Authentication
 <br/>
 </p>
 <br/>

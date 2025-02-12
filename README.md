@@ -28,9 +28,9 @@
   <p>
    🛠️ Node.js & Express.js
 <br/>
-🎨 Bootstrap for UI Styling
+📦 MongoDB (Mongoose ORM)
 <br/>
-   🌐 React Router for Navigation
+   🔑 JWT Authentication
   </p>
 <br/>
 <h2> Deployment:</h2>

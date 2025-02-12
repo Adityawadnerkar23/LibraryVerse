@@ -33,26 +33,18 @@ git clone https://github.com/yourusername/LibraryVerse.git
 cd LibraryVerse
 <br/>
 
-# 🔹 Frontend Setup
-cd frontend
-<br/>
-npm install
-<br/>
-npm start
-<br/>
-# 🔹 Backend Setup
-cd backend
-<br/>
-npm install
-<br/>
-npm start
-<br/>
-# Create a .env file in the backend directory with the following:
-MONGO_URI=your_mongodb_connection_string
-<br/>
-JWT_SECRET=your_secret_key
-<br/>
-PORT=5000
+### 🔹 Frontend Setup
+    cd frontend
+    npm install
+    npm start
+### 🔹 Backend Setup
+    cd backend
+    npm install
+    npm start
+### Create a .env file in the backend directory with the following:
+    MONGO_URI=your_mongodb_connection_string
+    JWT_SECRET=your_secret_key
+    PORT=5000
 <br/>
 # 🌍 Live Demo
 🔗 Frontend: LibraryVerse Frontend

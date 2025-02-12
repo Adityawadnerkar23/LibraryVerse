@@ -38,10 +38,10 @@
 | npm install | Installs the required files |
 |    npm start | Starts the Developement Server |
 # 🔹 Backend Setup
-| --- | --- |
-| cd backend | Changes the Directory |
-| npm install | Installs the required files |
-| npm start | Starts the Backend Server |
+ | --- | --- |
+ | cd backend | Changes the Directory |
+ | npm install | Installs the required files |
+ | npm start | Starts the Backend Server |
 ### Create a .env file in the backend directory with the following:
     MONGO_URI=your_mongodb_connection_string
     JWT_SECRET=your_secret_key

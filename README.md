@@ -17,7 +17,6 @@
 <br/>
 # 📂 Tech Stack 
 ### <h2>Frontend:<h2/>
-  <p>
     ⚛️ React.js (Context API, Hooks)
 <br/>
 🎨 Bootstrap for UI Styling

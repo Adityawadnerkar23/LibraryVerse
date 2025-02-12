@@ -23,7 +23,6 @@
     🛠️ Node.js & Express.js
     📦 MongoDB (Mongoose ORM)
     🔑 JWT Authentication
-<br/>
 ### Deployment:
     🌎 Frontend: Deployed on Vercel
     🖥️ Backend: Hosted on Vercel.   

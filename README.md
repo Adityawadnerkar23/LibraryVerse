@@ -45,7 +45,6 @@ cd LibraryVerse
     MONGO_URI=your_mongodb_connection_string
     JWT_SECRET=your_secret_key
     PORT=5000
-<br/>
 # 🌍 Live Demo
 🔗 Frontend: LibraryVerse Frontend
 <br/>

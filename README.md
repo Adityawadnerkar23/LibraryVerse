@@ -8,9 +8,13 @@
 ✅ Multi-Language Support – Switch between English & Hindi dynamically.
 <br/>
 ✅ User Authentication – Secure login/logout functionality.
+<br/>
 ✅ Interactive UI – Built with React.js & Bootstrap for a smooth user experience.
+<br/>
 ✅ RESTful API Integration – Powered by Express.js & MongoDB for scalable backend support.
+<br/>
 ✅ Dark Mode & Responsive UI – Optimized for all screen sizes.
+<br/>
 # 📂 Tech Stack
 Frontend:
 ⚛️ React.js (Context API, Hooks)

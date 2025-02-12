@@ -18,11 +18,8 @@
 # 📂 Tech Stack 
 ### <h2>Frontend:<h2/>
     ⚛️ React.js (Context API, Hooks)
-<br/>
-🎨 Bootstrap for UI Styling
-<br/>
-   🌐 React Router for Navigation
-  </p>
+    🎨 Bootstrap for UI Styling
+    🌐 React Router for Navigation
  <h2>Backend:<h2/>
   <p>
    🛠️ Node.js & Express.js

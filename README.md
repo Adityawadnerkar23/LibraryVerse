@@ -19,12 +19,13 @@
     ⚛️ React.js (Context API, Hooks)
     🎨 Bootstrap for UI Styling
     🌐 React Router for Navigation
- ### <h2>Backend:<h2/>
+ ### Backend:
     🛠️ Node.js & Express.js
     📦 MongoDB (Mongoose ORM)
     🔑 JWT Authentication
 <br/>
 # Deployment:
+<br/>
   🌎 Frontend: Deployed on Vercel
 <br/>
   🖥️ Backend: Hosted on Vercel.

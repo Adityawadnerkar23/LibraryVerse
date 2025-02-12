@@ -38,8 +38,8 @@
 <br/>
   🖥️ Backend: Hosted on Vercel.
  </br>
+   
    # 🚀 Installation & Setup
 Clone the repository:
-Edit
 git clone https://github.com/yourusername/LibraryVerse.git
 cd LibraryVerse

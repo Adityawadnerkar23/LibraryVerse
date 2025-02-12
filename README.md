@@ -44,3 +44,53 @@ Clone the repository:
 git clone https://github.com/yourusername/LibraryVerse.git
 <br/>
 cd LibraryVerse
+<br/>
+
+# 🔹 Frontend Setup
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm start
+<br/>
+# 🔹 Backend Setup
+bash
+Copy
+Edit
+cd backend
+npm install
+npm start
+<br/>
+# Create a .env file in the backend directory with the following:
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+PORT=5000
+<br/>
+# 🌍 Live Demo
+🔗 Frontend: LibraryVerse Frontend
+<br/>
+🔗 Backend API: LibraryVerse API
+
+# 🤝 Contribution Guide
+Fork this repository
+Clone your forked repo
+Create a new branch for your feature
+Commit your changes & push to GitHub
+Submit a pull request 🚀
+# 📧 Contact & Support
+If you have any questions or suggestions, feel free to reach out:
+📩 Email: support@libraryverse.com
+🐦 Twitter: @LibraryVerse
+
+# 🚀 Star this repo if you like it! ⭐
+# Let me know if you need any modifications or additions! 🚀
+
+
+
+
+
+
+
+
+

@@ -26,7 +26,7 @@
 ### Deployment:
     🌎 Frontend: Deployed on Vercel
     🖥️ Backend: Hosted on Vercel.   
-   ### 🚀 Installation & Setup
+   # 🚀 Installation & Setup
        Clone the repository:
        git clone https://github.com/yourusername/LibraryVerse.git
        cd LibraryVerse

@@ -2,8 +2,11 @@
 🚀 LibraryVerse is a full-stack web application designed for seamless book management, search, and categorization. Whether you're an avid reader, a bookstore owner, or a library administrator, this platform provides an intuitive interface for browsing, adding, and managing books efficiently.
 # ✨ Features
 ✅ Book Search & Management – Find books by title instantly with a fast search algorithm.
+<br/>
 ✅ Category & Product Forms – Easily categorize books and manage product details.
+<br/>
 ✅ Multi-Language Support – Switch between English & Hindi dynamically.
+<br/>
 ✅ User Authentication – Secure login/logout functionality.
 ✅ Interactive UI – Built with React.js & Bootstrap for a smooth user experience.
 ✅ RESTful API Integration – Powered by Express.js & MongoDB for scalable backend support.

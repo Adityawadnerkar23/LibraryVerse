@@ -25,8 +25,7 @@
 🌐 React Router for Navigation
 <br/>
   </p>
-
-<h3>Backend:</h3>
+<h2>Backend:</h2>
 <p>
   🛠️ Node.js & Express.js
 <br/>
@@ -35,7 +34,7 @@
 🔑 JWT Authentication
 <br/>
 </p>
-
+<br/>
 Deployment:
 🌎 Frontend: Deployed on Vercel
 <br/>

@@ -24,13 +24,9 @@
     📦 MongoDB (Mongoose ORM)
     🔑 JWT Authentication
 <br/>
-# Deployment:
-<br/>
-  🌎 Frontend: Deployed on Vercel
-<br/>
-  🖥️ Backend: Hosted on Vercel.
- </br>
-   
+### Deployment:
+    🌎 Frontend: Deployed on Vercel
+    🖥️ Backend: Hosted on Vercel.   
    # 🚀 Installation & Setup
 Clone the repository:
 git clone https://github.com/yourusername/LibraryVerse.git

@@ -14,7 +14,6 @@
 ✅ RESTful API Integration – Powered by Express.js & MongoDB for scalable backend support.
 <br/>
 ✅ Dark Mode & Responsive UI – Optimized for all screen sizes.
-<br/>
 # 📂 Tech Stack 
 ### <h1>Frontend:<h1/>
     ⚛️ React.js (Context API, Hooks)
@@ -25,7 +24,7 @@
     📦 MongoDB (Mongoose ORM)
     🔑 JWT Authentication
 <br/>
-<h2> Deployment:</h2>
+# Deployment:
   🌎 Frontend: Deployed on Vercel
 <br/>
   🖥️ Backend: Hosted on Vercel.

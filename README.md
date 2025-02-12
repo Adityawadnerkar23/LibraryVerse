@@ -26,7 +26,7 @@
 <br/>
   </p>
 
-<h2>Backend:</h2>
+<h3>Backend:</h3>
 <p>
   🛠️ Node.js & Express.js
 <br/>

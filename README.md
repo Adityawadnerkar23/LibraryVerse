@@ -34,6 +34,6 @@
   </p>
 <br/>
 <h2> Deployment:</h2>
-🌎 Frontend: Deployed on Vercel
+  🌎 Frontend: Deployed on Vercel
 <br/>
-🖥️ Backend: Hosted on Vercel/Render
+  🖥️ Backend: Hosted on Vercel/Render

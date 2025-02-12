@@ -26,13 +26,16 @@
 <br/>
   </p>
 
-Backend:
-🛠️ Node.js & Express.js
+<h2>Backend:</h2>
+<p>
+  🛠️ Node.js & Express.js
 <br/>
 📦 MongoDB (Mongoose ORM)
 <br/>
 🔑 JWT Authentication
 <br/>
+</p>
+
 Deployment:
 🌎 Frontend: Deployed on Vercel
 <br/>

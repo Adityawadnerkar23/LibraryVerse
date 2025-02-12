@@ -38,6 +38,7 @@
 | npm install | Installs the required files |
 |    npm start | Starts the Developement Server |
 # 🔹 Backend Setup
+| Command | Description |
  | --- | --- |
  | cd backend | Changes the Directory |
  | npm install | Installs the required files |

@@ -24,15 +24,14 @@
 <br/>
    🌐 React Router for Navigation
   </p>
-<h2>Backend:</h2>
-<p>
-  🛠️ Node.js & Express.js
+ <h2>Frontend:<h2/>
+  <p>
+    ⚛️ React.js (Context API, Hooks)
 <br/>
- 📦 MongoDB (Mongoose ORM)
+🎨 Bootstrap for UI Styling
 <br/>
- 🔑 JWT Authentication
-<br/>
-</p>
+   🌐 React Router for Navigation
+  </p>
 <br/>
 <h2> Deployment:</h2>
 🌎 Frontend: Deployed on Vercel

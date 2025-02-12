@@ -24,9 +24,9 @@
 <br/>
    🌐 React Router for Navigation
   </p>
- <h2>Frontend:<h2/>
+ <h2>Backend:<h2/>
   <p>
-    ⚛️ React.js (Context API, Hooks)
+   🛠️ Node.js & Express.js
 <br/>
 🎨 Bootstrap for UI Styling
 <br/>

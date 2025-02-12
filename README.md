@@ -31,11 +31,11 @@
        git clone https://github.com/yourusername/LibraryVerse.git
        cd LibraryVerse
 
-### 🔹 Frontend Setup
+# 🔹 Frontend Setup
     cd frontend
     npm install
     npm start
-### 🔹 Backend Setup
+# 🔹 Backend Setup
     cd backend
     npm install
     npm start

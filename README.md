@@ -16,7 +16,7 @@
 ✅ Dark Mode & Responsive UI – Optimized for all screen sizes.
 <br/>
 # 📂 Tech Stack 
-### <h2>Frontend:<h2/>
+### <h1>Frontend:<h1/>
     ⚛️ React.js (Context API, Hooks)
     🎨 Bootstrap for UI Styling
     🌐 React Router for Navigation

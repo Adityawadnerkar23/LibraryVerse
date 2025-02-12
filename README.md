@@ -63,6 +63,7 @@ npm install
 npm start
 <br/>
 # Create a .env file in the backend directory with the following:
+<br/>
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 PORT=5000
@@ -80,9 +81,7 @@ Commit your changes & push to GitHub
 Submit a pull request 🚀
 # 📧 Contact & Support
 If you have any questions or suggestions, feel free to reach out:
-📩 Email: support@libraryverse.com
-🐦 Twitter: @LibraryVerse
-
+📩 Email: amwadnerkar@gmail.com
 # 🚀 Star this repo if you like it! ⭐
 # Let me know if you need any modifications or additions! 🚀
 

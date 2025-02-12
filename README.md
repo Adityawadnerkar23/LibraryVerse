@@ -18,12 +18,19 @@
 # 📂 Tech Stack
 Frontend:
 ⚛️ React.js (Context API, Hooks)
+<br/>
 🎨 Bootstrap for UI Styling
+<br/>
 🌐 React Router for Navigation
+<br/>
 Backend:
 🛠️ Node.js & Express.js
+<br/>
 📦 MongoDB (Mongoose ORM)
+<br/>
 🔑 JWT Authentication
+<br/>
 Deployment:
 🌎 Frontend: Deployed on Vercel
+<br/>
 🖥️ Backend: Hosted on Vercel/Render

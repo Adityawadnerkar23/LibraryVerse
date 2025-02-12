@@ -63,9 +63,10 @@ npm install
 npm start
 <br/>
 # Create a .env file in the backend directory with the following:
-<br/>
 MONGO_URI=your_mongodb_connection_string
+<br/>
 JWT_SECRET=your_secret_key
+<br/>
 PORT=5000
 <br/>
 # 🌍 Live Demo
@@ -75,9 +76,13 @@ PORT=5000
 
 # 🤝 Contribution Guide
 Fork this repository
+<br/>
 Clone your forked repo
+<br/>
 Create a new branch for your feature
+<br/>
 Commit your changes & push to GitHub
+<br/>
 Submit a pull request 🚀
 # 📧 Contact & Support
 If you have any questions or suggestions, feel free to reach out:

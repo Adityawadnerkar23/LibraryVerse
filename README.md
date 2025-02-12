@@ -47,19 +47,17 @@ cd LibraryVerse
 <br/>
 
 # 🔹 Frontend Setup
-bash
-Copy
-Edit
 cd frontend
+<br/>
 npm install
+<br/>
 npm start
 <br/>
 # 🔹 Backend Setup
-bash
-Copy
-Edit
 cd backend
+<br/>
 npm install
+<br/>
 npm start
 <br/>
 # Create a .env file in the backend directory with the following:
@@ -86,6 +84,7 @@ Commit your changes & push to GitHub
 Submit a pull request 🚀
 # 📧 Contact & Support
 If you have any questions or suggestions, feel free to reach out:
+<br/>
 📩 Email: amwadnerkar@gmail.com
 # 🚀 Star this repo if you like it! ⭐
 # Let me know if you need any modifications or additions! 🚀
